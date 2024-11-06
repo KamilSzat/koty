@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kot.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                x:Name="imgkot"
+                HeightRequest="300"
+                WidthRequest="300"/>
+
+            <Button
+                x:Name="kot"
+                Text="kot" 
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+            
+            
+            <Image
+                x:Name="imgkot_gift"
+                HeightRequest="300"
+                WidthRequest="300"/>
+
+            <Button
+                x:Name="koty"
+                Text="kot gift" 
+                Clicked="OnCounterClicked2"
+                HorizontalOptions="Fill" />
+            
+            
+            <Image
+                 x:Name="imgkot_text"
+                  HeightRequest="300"
+                  WidthRequest="300"/>
+
+            <Button
+                  x:Name="koty_text"
+                  Text="kot tekst" 
+                  Clicked="OnCounterClicked3"
+                  HorizontalOptions="Fill" />
+            <Entry x:Name="kotki" Text="Luj" />
+            <Entry x:Name="kotki1" Text="40" />
+            
+            <Image
+     x:Name="imgkot_filtr"
+      HeightRequest="300"
+      WidthRequest="300"/>
+
+            <Button
+      x:Name="koty_filtr"
+      Text="kot filtr" 
+      Clicked="OnCounterClicked4"
+      HorizontalOptions="Fill" />
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
