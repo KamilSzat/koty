@@ -1,11 +1,10 @@
-﻿using Windows.Web.Http.Headers;
+﻿
 using static System.Net.Mime.MediaTypeNames;
 
 namespace kot
 {
     public partial class MainPage : ContentPage
     {
-
         public MainPage()
         {
             InitializeComponent();
@@ -13,17 +12,20 @@ namespace kot
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
+            double imageSize = Sizeslider.Value;
+            
             imgkot.Source = new UriImageSource
             {
                 Uri = new Uri("https://cataas.com/cat")
 
             };
+            imgkot.HeightRequest = imageSize;
         }
         private void OnCounterClicked2(object sender, EventArgs e)
         {
             imgkot_gift.Source = new UriImageSource
             {
-                Uri = new Uri("https://cataas.com/cat/gif")
+                Uri = new Uri("https://cataas.com/cat/gif/")
             };
         }
         private void OnCounterClicked3(object sender, EventArgs e)
@@ -42,7 +44,6 @@ namespace kot
             {
                 Uri = new Uri("https://cataas.com/cat?filter=mono")
             };
-
         }
     }
 }
