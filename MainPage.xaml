@@ -9,9 +9,10 @@
             Spacing="25">
             <Image
                 x:Name="imgkot"
-                HeightRequest="300"
-                WidthRequest="300"/>
-
+                />
+            
+            <Slider x:Name="Sizeslider" Maximum="360" Minimum="50" />
+            <Label x:Name="sliderLabel"/>
             <Button
                 x:Name="kot"
                 Text="kot" 
@@ -19,6 +20,8 @@
                 HorizontalOptions="Fill" />
             
             
+  
+
             <Image
                 x:Name="imgkot_gift"
                 HeightRequest="300"
@@ -54,6 +57,8 @@
       Text="kot filtr" 
       Clicked="OnCounterClicked4"
       HorizontalOptions="Fill" />
+            
+
 
 
 
